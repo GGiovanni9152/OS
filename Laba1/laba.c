@@ -79,7 +79,7 @@ int main()
         
         if (second_process_id == 0)
         {
-            printf("Second child process\n");
+            //printf("Second child process\n");
             close(second_pipe_fd[1]);
             close(first_pipe_fd[0]);
             close(first_pipe_fd[1]);
@@ -93,7 +93,7 @@ int main()
 		
 		else
 		{
-		    printf("First child process\n");
+		    //printf("First child process\n");
 		    close(first_pipe_fd[1]);
             close(second_pipe_fd[0]);
             close(second_pipe_fd[1]);
@@ -109,7 +109,7 @@ int main()
     
     else
     {
-        printf("Parent process\n");
+        //printf("Parent process\n");
         close(first_pipe_fd[0]);
         close(second_pipe_fd[0]);
         char* input_string;

@@ -4,15 +4,6 @@
 #include <string.h>
 #include <ctype.h>
 
-void error_checking(int result, char* error)
-{
-    if (result == -1)
-    {
-        printf("%s\n", error);
-        exit(-1);
-    }
-}
-
 
 int is_vowel(char symbol)
 {
